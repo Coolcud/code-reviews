@@ -1,13 +1,10 @@
 def palindrome_number(x):
-    temp = x
-    reverse = 0
+    copy_of_x = x
+    reversed = 0
 
-    while (x > 0):
-        dig = x % 10
-        reverse = reverse * 10 + dig
-        x = x // 10
+    while x > 0:
+        last_digit = x % 10
+        reversed = reversed * 10 + last_digit
+        x //= 10
 
-        if temp == reverse:
-            return True
-        else:
-            return False
+    return copy_of_x == reversed
