@@ -7,11 +7,11 @@ Each student should select **one** of the following tests, implement the functio
 `twoSum` is a function which finds which two numbers in a list of numbers add up to the given target.
 
 ```py
-def twoSum(n, t):
-    for i in range(len(n)):
-        for j in range(i + 1, len(n)):
-            if n[j] == t - n[i]:
-                return [i, j]
+def twoSum(list, target):
+    for i in range(len(list)):
+        for j in range(i + 1, len(list)):
+            if list[j] == target - list[i]:
+                return [list[i], list[j]]
 ```
 
 ### Tests
